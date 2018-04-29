@@ -1,27 +1,25 @@
 # Nombre : Miguel Angel Oviedo Rodriguez 20131463I
-# Respuesta3
 
-# (a)
+# Respuesta(a)
 sexo <- c("F", "M", "M", "M", "F", "F", "F", "M", "M", "M", "M", "F", "M", "F", "F", "F", "M", "M", "M", "M")
 
 partido <- c("Laborista","Nacional","Nacional", "Laborista","Nacional", "Verdes","Nacional","Nacional", "Verdes", "Otros",
              "Verdes", "Laborista","Nacional","Nacional", "Laborista", "Laborista","Nacional","Nacional", "Laborista", "Otros")
 
-# (b)
+# Respuesta(b)
 # En este caso no tiene sentido usar ordered ya que los elementos de cada vector
 # no tienen un sentido jerárquico sino nominal
 # En caso de un factor de caracteres el nivel se da según el orden alfabético por defecto,
 # o según se le indique de forma explícita
 f_sexo <- factor(sexo)
-f_sexo
 f_partido <- factor(partido)
-f_partido
 
-# (c)
+# # Respuesta(c)
 partido_hom <- f_partido[c(2:4, 8:11, 13, 17:20)]
 generos_nac <- f_sexo[c(2, 3, 5, 7, 8, 13, 14, 17, 18)]
 
-# (d)
+# Respuesta(d)
+# OBS: Hay 25 resultados, no 26
 f_partido <- factor(c(partido, "Nacional", "Maori", "Maori", "Laborista",  "Verdes", "Laborista"))
 f_sexo <- factor(c(sexo, "M", "M", "F", "F", "F", "M"))
 
